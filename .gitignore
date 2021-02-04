@@ -1,0 +1,12 @@
+.vscode/
+.vscode/settings.json
+.vscode/tasks/json
+.vscode/launch/json
+.code-workspace
+.history/
+.env
+.env.test
+node_modules/
+.DS_Store
+.AppleDouble
+.LSOverride
