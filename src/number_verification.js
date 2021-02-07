@@ -7,20 +7,16 @@ exports.validate = function(arg){
             .fetch()
             .then((response) => {
                 response = response.countryCode;
-                console.log(response);
                 if(CONFIG.ALLOWEDCOUNTRIES.includes(response) == true){
-                    console.log("RETURNS TRUE");
                     resolve(true);
                     return;
                 }
                 else {
-                    console.log("RETURNS FALSE");
                     resolve(false);
                     return;
                 }
             })
             .catch((err) => {
-                console.log(err + "ERROR");
                 reject(false);
                 return;
             });

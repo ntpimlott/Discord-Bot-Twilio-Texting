@@ -67,7 +67,6 @@ CLIENT.on('message', (message) => {
             }
 
             if (command === 'refresh') {
-                console.log("Enters Refresh");
                 REFRESH(contactsObject)
                     .then((result) => {
                         contactsObject.contacts = result;
